@@ -42,7 +42,7 @@
 
                                     <input type="number" name="dni" class="form-control form-control-lg" id="dni" required="required" placeholder="Ingrese DNI">
 
-                                    <button class="btn btn-lg btn-outline-success btn-block my-3" id="btn-obtener">
+                                    <button class="btn btn-lg btn-outline-warning btn-block my-3" id="btn-obtener">
                                         OBTENER
                                     </button>
                                 </form>
@@ -141,7 +141,8 @@
                 function Descargar(){
                     $('.notice-general').html(
                         `<div class="alert alert-success alert-dismissible fade show text-center notice" role="alert">
-                            <span class="notification">certificado para ${dni} <a href='library_download/certificate.php?chmodmodeelle=%&${btoa(dni)}&${btoa("Lenyn putito siempre putito")}&id=${btoa(dni)}' target='_blank' class="btn btn-success btn-lg btn-block">Descargar pdf</a> </span>
+                            <span class="notification"> certificado para ${dni} 
+                            <a href='library_download/certificate.php?chmodmodeelle=%&${btoa(dni)}&${btoa("Lenyn putito siempre putito")}&id=${btoa(dni)}' target='_blank' class="btn btn-warning btn-lg btn-block">Descargar pdf</a> </span>
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                 <span aria-hidden="true">&times</span> 
                             </button>

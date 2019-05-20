@@ -104,34 +104,40 @@
                             
     <!-- SECTION CONTACTO -->
     
-    <section class="bg-text-contact py-2">
+    <section class="bg-text-contact py-0">
         <h3 class="text-center text-muted text-white"> <!-- this section is for titles. For example CONTACTANOS--> </h3>
     </section>
 
-    <section class="bg-contact py-4" >
-        <div class="container ">
-            <div class="row">
-                <div class="col-lg-5 pl-2 pt-2 text-white pb-3 ">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item bg-contact">
-                            <i class="ml-2 fas fa-user-circle"></i> La Lenyn Eli Flores Balandra <br>
-                            <i class="ml-2 fas fa-phone-square"></i> 987 075 780 <br>
+    <section class="bg-contact py-3" >
+        <div class="container">
+            <div class="row pt-3">
+                <div class="col-lg-5 pl-5 text-white font-zises">
+                    <ul class="list-unstyled">
+                        <li class="py-1">
+                            <i class="ml-2 fas fa-user-circle"></i> La Lenyn Eli Flores Balandra 
+                            <br>
+                            <i class="ml-2 fas fa-phone-square"></i> 987 075 780 
+                            <br>
                             <a href="#"><i class="mx-2 fab fa-facebook-f text-secondary "></i></a>
                             <a href="#"><i class="mx-2 fab fa-twitter text-secondary "></i></a>
                             <a href="#"><i class="mx-2 fab fa-instagram text-secondary "></i></a>
 
                         </li>
-                        <li class="list-group-item bg-contact">
-                            <i class="ml-2 fas fa-user-circle"></i> KEVIN MAS NAAA  <br>
-                            <i class="ml-2 fas fa-phone-square"></i> 987 075 780 <br>
+                        <li class="py-1">
+                            <i class="ml-2 fas fa-user-circle"></i> KEVIN MAS NAAA  
+                            <br>
+                            <i class="ml-2 fas fa-phone-square"></i> 987 075 780 
+                            <br>
                             <a href="#"><i class="mx-2 fab fa-facebook-f text-secondary "></i></a>
                             <a href="#"><i class="mx-2 fab fa-twitter text-secondary "></i></a>
                             <a href="#"><i class="mx-2 fab fa-instagram text-secondary "></i></a>
 
                         </li>
-                        <li class="list-group-item bg-contact">
-                            <i class="ml-2 fas fa-user-circle"></i> La Lenyn Eli Flores Balandra <br>
-                            <i class="ml-2 fas fa-phone-square"></i> 987 075 780 <br>
+                        <li class="py-1">
+                            <i class="ml-2 fas fa-user-circle"></i> La Lenyn Eli Flores Balandra 
+                            <br>
+                            <i class="ml-2 fas fa-phone-square"></i> 987 075 780 
+                            <br>
                             <a href="#"><i class="mx-2 fab fa-facebook-f text-secondary "></i></a>
                             <a href="#"><i class="mx-2 fab fa-twitter text-secondary "></i></a>
                             <a href="#"><i class="mx-2 fab fa-instagram text-secondary "></i></a>
@@ -139,8 +145,11 @@
                         </li>
                     </ul>    
                 </div>                
-                <div class="col-lg-7 d-flex justify-content-end">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31015.95296268362!2d-73.39309231099318!3d-13.658121286107539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916d2bc7ff979013%3A0x7622e6cfe777add5!2sAndahuaylas!5e0!3m2!1ses-419!2spe!4v1558135265824!5m2!1ses-419!2spe" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <div class="col-lg-7"> 
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.0431263126356!2d-73.3914989501277!3d-13.655140590362942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916d2bc66e03d8a3%3A0x37c9b64471c102d1!2sCasa+del+Maestro!5e0!3m2!1ses-419!2spe!4v1558365401045!5m2!1ses-419!2spe" width="100%" height="350px" frameborder="0" style="border:0" allowfullscreen></iframe>                                            
+                    <span class="text-white">
+                        Av. Casafranca, Andahuaylas 03701
+                    </span>                    
                 </div>
             </div>
         </div>
