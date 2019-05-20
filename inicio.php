@@ -69,23 +69,63 @@
                         $query = "SELECT * FROM articulos ORDER BY orden ASC";
                         $result = mysqli_query($server,$query);
                         
+                        $datos = [];
                         while($row = mysqli_fetch_assoc($result)){
-                            
+                            $datos[] = $row;
+                        }
                         
-
-                    ?>                                  
+                        foreach($datos as $row){
+                            $titulo = $row['titulo'];                            
+                    ?>    
+                <!--Noticias repetidas veces -->
                     <div>
                         <div class="card text-left  my-1">
                             <div class="card-body">
-                                <h6> <?php echo $row['titulo']; ?> </h6>
+                                <h6> <?php echo $titulo; ?> </h6>
                                 <div class="d-flex">
                                     <img src="backend/<?php echo $row['ruta']; ?>" width="100px" height="100px;" style="width:100px;" alt="">                                    
-                                    <p class="ml-3"> <?php echo $row['introduccion'] ?></p>
+                                    <p class="ml-3"> 
+                                        
+                                        <?php echo $row['introduccion'] ?>
+
+                                        <!-- Inicio Modal -->
+                                        <!-- Button trigger modal VER NOTICIA -->
+                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#exampleModalScrollable<?php echo $row['id'];?>">
+                                            ver noticia
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModalScrollable<?php echo $row['id'];?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalScrollableTitle"> <?php echo $titulo;?></h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="backend/<?php echo $row['ruta']; ?>" width="100%" height="330px;" style="width:100%;" alt="">                                                                                
+
+                                                <?php                                                
+                                                    echo $row['contenido'];
+                                                ?>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                                <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <!-- Fin Modal -->
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <?php
+                        
                         }
                     ?>
 
