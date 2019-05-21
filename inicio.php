@@ -66,18 +66,32 @@
                         $con = new DB();
                         $server = $con->conectar();
                         
-                        $query = "SELECT * FROM articulos ORDER BY orden ASC";
+                        $num_pag = 1;
+                        $num_notice = 4;
+
+                        $num_pag = (!empty($_GET['num']))? $_GET['num'] : 0; 
+                        $num_pag_sql= ($num_pag!=0)? $num_pag-1: 0;
+
+                        $query = "SELECT * FROM articulos ORDER BY orden ASC LIMIT $num_pag_sql,$num_notice";
                         $result = mysqli_query($server,$query);
                         
-                        $datos = [];
+                        $notice_cantidad = 0;
+                        $datos = [];                    
                         while($row = mysqli_fetch_assoc($result)){
                             $datos[] = $row;
+                            $notice_cantidad++;
+                        }
+                        
+                        //Controla el final del paginado de las noticias
+                        if(!$notice_cantidad){
+                            $num_pag = 0;
+                            echo "NO HAY MÁS NOTICIAS...";
                         }
                         
                         foreach($datos as $row){
                             $titulo = $row['titulo'];                            
                     ?>    
-                <!--Noticias repetidas veces -->
+                    <!--Noticias repetidas veces -->
                     <div>
                         <div class="card text-left  my-1">
                             <div class="card-body">
@@ -128,6 +142,24 @@
                         
                         }
                     ?>
+
+                    <div class="container bg-light py-2">
+                        <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-start">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anteriro</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="/sutepv2/?num=1">1</a></li>
+                            <li class="page-item"><a class="page-link" href="/sutepv2/?num=2">2</a></li>
+                            <li class="page-item"><a class="page-link" href="/sutepv2/?num=3">3</a></li>
+                            
+                            <li class="page-item">
+                                <a class="page-link" href="/sutepv2/?num=<?php echo $num_pag+1; ?>">Siguiente</a>
+                            </li>
+                        </ul>
+                        </nav>                    
+                    </div>
+
 
                 </div>
 
