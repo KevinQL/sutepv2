@@ -46,8 +46,8 @@
 
     <!-- secction container -->
 
-    <section class="bg-warning py-5">
-        <div class="container lead text-light text-center">
+    <section class="colorbarra py-5">
+        <div class="container lead text-dark text-center">
             <img src="img/logosutep.png" width="100px" alt="">
             <p>Un niño, un maestro, un libro, un lápiz pueden cambiar el mundo (Malala Yousafzai).</p>
         </div>
@@ -104,10 +104,16 @@
 
                                         <!-- Inicio Modal -->
                                         <!-- Button trigger modal VER NOTICIA -->
+                                        <br>
                                         <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#exampleModalScrollable<?php echo $row['id'];?>">
                                             ver noticia
                                         </button>
-
+                                        <br>
+                                        <strong class="text-dark">
+                                            <?php 
+                                                echo $row['fecha'];
+                                            ?>
+                                        </strong>
                                         <!-- Modal -->
                                         <div class="modal fade" id="exampleModalScrollable<?php echo $row['id'];?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
                                         <div class="modal-dialog" role="document">
@@ -176,8 +182,8 @@
                             
     <!-- SECTION CONTACTO -->
     
-    <section class="bg-text-contact py-0">
-        <h3 class="text-center text-muted text-white"> <!-- this section is for titles. For example CONTACTANOS--> </h3>
+    <section class="bg-text-contact py-3">
+        <h3 class="text-center text-muted text-white">CONTÁCTANOS <!-- this section is for titles. For example CONTACTANOS--> </h3>
     </section>
 
     <section class="bg-contact py-3" >
@@ -186,19 +192,9 @@
                 <div class="col-lg-5 pl-5 text-white font-zises">
                     <ul class="list-unstyled">
                         <li class="py-1">
-                            <i class="ml-2 fas fa-user-circle"></i> La Lenyn Eli Flores Balandra 
+                            <i class="ml-2 fas fa-user-circle"></i> Mauro Concha Villegas 
                             <br>
-                            <i class="ml-2 fas fa-phone-square"></i> 987 075 780 
-                            <br>
-                            <a href="#"><i class="mx-2 fab fa-facebook-f text-secondary "></i></a>
-                            <a href="#"><i class="mx-2 fab fa-twitter text-secondary "></i></a>
-                            <a href="#"><i class="mx-2 fab fa-instagram text-secondary "></i></a>
-
-                        </li>
-                        <li class="py-1">
-                            <i class="ml-2 fas fa-user-circle"></i> KEVIN MAS NAAA  
-                            <br>
-                            <i class="ml-2 fas fa-phone-square"></i> 987 075 780 
+                            <i class="ml-2 fas fa-phone-square"></i> 953 744 203 
                             <br>
                             <a href="#"><i class="mx-2 fab fa-facebook-f text-secondary "></i></a>
                             <a href="#"><i class="mx-2 fab fa-twitter text-secondary "></i></a>
@@ -206,9 +202,19 @@
 
                         </li>
                         <li class="py-1">
-                            <i class="ml-2 fas fa-user-circle"></i> La Lenyn Eli Flores Balandra 
+                            <i class="ml-2 fas fa-user-circle"></i> Elias Flores Carrión  
                             <br>
-                            <i class="ml-2 fas fa-phone-square"></i> 987 075 780 
+                            <i class="ml-2 fas fa-phone-square"></i> 978 004 592 
+                            <br>
+                            <a href="#"><i class="mx-2 fab fa-facebook-f text-secondary "></i></a>
+                            <a href="#"><i class="mx-2 fab fa-twitter text-secondary "></i></a>
+                            <a href="#"><i class="mx-2 fab fa-instagram text-secondary "></i></a>
+
+                        </li>
+                        <li class="py-1">
+                            <i class="ml-2 fas fa-user-circle"></i> Charo Rodriguez 
+                            <br>
+                            <i class="ml-2 fas fa-phone-square"></i> 939 689 006 
                             <br>
                             <a href="#"><i class="mx-2 fab fa-facebook-f text-secondary "></i></a>
                             <a href="#"><i class="mx-2 fab fa-twitter text-secondary "></i></a>
@@ -229,25 +235,7 @@
 
     <!-- fin section contact -->
                       
-    <!-- FOOTER -->
-
-    <footer class="bg-dark text-white ">
-        <div class="container">
-            
-            <div class="p-5 row text-center">
-                <div class="col-md-9 text-md-left">
-                    <span>©&nbsp; </span><span >2019</span><span>&nbsp;</span><span>SutepAndahuaylas</span><span>.&nbsp;</span><span>Todos los derechos reservados</span><span>&nbsp;</span>. Desarrollado&nbsp;por&nbsp;<a href="http://rezuam.intcap.org/" target="_blank">Rezuam</a>
-                </div>
-                <div class="col-md-3 text-md-right">
-                    <a href="https://www.facebook.com/KevQL1109" target="_blank"><i class="mx-2 fab fa-facebook-f"></i></a>
-                    <a href="#" target="_blank"><i class="mx-2 fab fa-twitter"></i></a>
-                    <a href="#" target="_blank"><i class="mx-2 fab fa-instagram"></i></a>                        
-                </div>
-            </div>
-        
-        </div>
-    </footer>
-
+  
     <?php include('pie.html'); ?>
                                 
 </body>

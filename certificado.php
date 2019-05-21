@@ -28,7 +28,7 @@
             <div class="container py-5">
                 <div class="row">
                     <div class="col-md-6 text-center">
-                        <img src="img/certifiacdo1.png" class="img-fluid" width="340px;" alt="">
+                        <img src="img/certifiacdo1.png" class="img-fluid" width="370px;" alt="">
                     </div>
                     <div class="col-md-6 justify-content-center align-self-center px-5 p-sm-5">
                         <div class="text-white lead ">
@@ -67,25 +67,6 @@
     </section>
 
     <!-- FOOTER -->
-
-    <footer class="bg-dark text-white ">
-        <div class="container">
-            
-            <div class="p-5 row text-center">
-                <div class="col-md-9 text-md-left">                        
-                    <span>©&nbsp; </span><span >2019</span><span>&nbsp;</span><span>SutepAndahuaylas</span><span>.&nbsp;</span><span>Todos los derechos reservados</span><span>&nbsp;</span>. Desarrollado&nbsp;por&nbsp;<a href="http://rezuam.intcap.org/" target="_blank">Rezuam</a>                   
-                </div>
-                <div class="col-md-3 text-md-right">
-                    <a href="https://www.facebook.com/KevQL1109" target="_blank"><i class="mx-2 fab fa-facebook-f"></i></a>
-                    <a href="#" target="_blank"><i class="mx-2 fab fa-twitter"></i></a>
-                    <a href="#" target="_blank"><i class="mx-2 fab fa-instagram"></i></a>                        
-                </div>
-            </div>
-        
-        </div>
-    </footer>
-
-
 
     <?php include('pie.html'); ?>
 

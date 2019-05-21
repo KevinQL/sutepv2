@@ -8,12 +8,15 @@
     opacity: .5;
 }
 .navbar-k .nav-item .nav-link-k{
-    color:#fff;
+    color:white;
+    /* font-weight: 600; */
+    /* border-top: .5px solid #fff; */
+    padding-left: .7em;     
 }
 
 .img-logo{
     position: absolute;
-    width: 30px;    
+    width: 70px; /*30px*/    
     top: 12px;
     margin-left: 4px;
 }
@@ -39,7 +42,9 @@
 
 
 .equipo-container{
-    background: rgba(255, 159, 67,.4); /*#30336b;*/
+    background: rgba(41, 174, 252, 0.829);
+    /* background: rgba(255, 159, 67,.4);  */
+    /* #30336b; */
 }
 
 .team-sutep{
@@ -82,5 +87,29 @@
     .fondo-transparente{
         background: rgba(48, 51, 107,.5);
     }
+    .option{
+        border-bottom: 1px solid #322;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 100px!important;
+    }
 }
 
+
+/* lenynnch */
+.colomenu{
+    background: rgba(41, 174, 252, 0.829);
+    opacity: 0.8;
+    color: black;
+
+ }
+.colorbarra{
+    background: rgba(41, 174, 252, 0.829);
+}
+.colorpie{
+    background: black;
+    opacity: 0.4;
+}
+.textcolor{
+    color: black;
+}
