@@ -8,7 +8,7 @@ class DB{
 	var $Clave;
 	
 	function DB(){
-		$this->BaseDatos = "cms"; //ugelandahuaylas
+		$this->BaseDatos = "cms"; //cms
 		$this->Servidor = "localhost";		//localhost
 		$this->Usuario = "root";			//lenyn
 		$this->Clave = "";				//LWcM#Mq@DI+j
